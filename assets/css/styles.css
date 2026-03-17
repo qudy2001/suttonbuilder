@@ -37,6 +37,7 @@ body {
     radial-gradient(circle at bottom right, rgba(79, 96, 68, 0.12), transparent 25%),
     linear-gradient(180deg, #fffdf9 0%, var(--sand) 100%);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
@@ -72,8 +73,10 @@ main {
 .eyebrow {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin: 0 0 0.75rem;
+  max-width: 100%;
   font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -268,6 +271,18 @@ ul {
   align-items: center;
 }
 
+.hero-copy,
+.hero-panel,
+.gallery-showcase,
+.slider-shell,
+.slider,
+.slider-viewport,
+.gallery-slide-content,
+.gallery-copy-box {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .hero-copy p.lead,
 .page-hero p.lead,
 .service-hero p.lead {
@@ -277,6 +292,8 @@ ul {
 
 .hero-copy h1 .hero-line {
   display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .hero-copy h1 .hero-accent {
@@ -1118,6 +1135,14 @@ ul {
 
   .gallery-slide {
     min-height: 360px;
+  }
+
+  .gallery-copy-box {
+    max-width: calc(100% - 1rem);
+  }
+
+  .gallery-slide-content {
+    width: 100%;
   }
 
   .slider-controls {
