@@ -54,5 +54,5 @@ docker run --rm -p 4174:8080 ghcr.io/qudy2001/suttonbuilder:latest admin
 
 ## Local notes
 
-- This folder was not a git repository when I prepared it, so the files are ready for GitHub but the repo still needs `git init` and an initial push if you have not already done that.
+- Pushes to `main` publish the `latest` image to GHCR through GitHub Actions.
 - The admin panel writes to `assets/data/site-content.json` and `assets/uploads/`.
