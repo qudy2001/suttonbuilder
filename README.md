@@ -43,6 +43,8 @@ The compose file keeps these paths writable and persistent:
 - `assets/data`
 - `assets/uploads`
 
+If `assets/data/site-content.json` is missing on first start, the container seeds it automatically from the bundled default content.
+
 ## Image commands
 
 The published image supports two runtime modes:

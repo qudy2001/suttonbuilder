@@ -10,7 +10,8 @@ WORKDIR /app
 COPY . /app
 
 RUN chmod +x /app/scripts/container-entrypoint.sh && \
-    mkdir -p /app/assets/uploads /app/assets/data
+    mkdir -p /app/assets/uploads /app/assets/data /opt/builder-defaults && \
+    cp /app/assets/data/site-content.json /opt/builder-defaults/site-content.json
 
 EXPOSE 8080
 

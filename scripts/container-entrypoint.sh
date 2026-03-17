@@ -5,8 +5,13 @@ set -eu
 APP_ROOT="${APP_ROOT:-/app}"
 PORT="${PORT:-8080}"
 MODE="${1:-site}"
+DEFAULTS_ROOT="${DEFAULTS_ROOT:-/opt/builder-defaults}"
 
 mkdir -p "$APP_ROOT/assets/data" "$APP_ROOT/assets/uploads"
+
+if [ ! -f "$APP_ROOT/assets/data/site-content.json" ] && [ -f "$DEFAULTS_ROOT/site-content.json" ]; then
+  cp "$DEFAULTS_ROOT/site-content.json" "$APP_ROOT/assets/data/site-content.json"
+fi
 
 case "$MODE" in
   site)
