@@ -1,0 +1,350 @@
+:root {
+  --admin-bg: #f6efe6;
+  --admin-panel: rgba(255, 255, 255, 0.92);
+  --admin-panel-strong: #ffffff;
+  --admin-ink: #1c1d1a;
+  --admin-ink-soft: #596056;
+  --admin-accent: #cb6a42;
+  --admin-accent-dark: #a84d2a;
+  --admin-moss: #4f6044;
+  --admin-line: rgba(197, 183, 161, 0.45);
+  --admin-shadow: 0 20px 45px rgba(28, 29, 26, 0.12);
+  --admin-radius: 14px;
+  --admin-radius-sm: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Optimistic, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--admin-ink);
+  background:
+    radial-gradient(circle at top left, rgba(203, 106, 66, 0.14), transparent 26%),
+    radial-gradient(circle at top right, rgba(79, 96, 68, 0.12), transparent 24%),
+    linear-gradient(180deg, #fffdf9 0%, var(--admin-bg) 100%);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.admin-shell {
+  width: min(1320px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.admin-topbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
+  gap: 1.2rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.admin-intro,
+.toolbar-card,
+.admin-section,
+.editor-card,
+.nested-card {
+  background: var(--admin-panel);
+  border: 1px solid var(--admin-line);
+  border-radius: var(--admin-radius);
+  box-shadow: var(--admin-shadow);
+}
+
+.admin-intro,
+.toolbar-card,
+.admin-section {
+  padding: 1.4rem;
+}
+
+.admin-eyebrow,
+.section-kicker {
+  margin: 0 0 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--admin-moss);
+}
+
+.admin-topbar h1,
+.admin-section h2,
+.editor-card h3,
+.nested-card h4 {
+  margin: 0 0 0.7rem;
+  line-height: 1.1;
+}
+
+.admin-topbar h1 {
+  font-size: clamp(2.15rem, 4vw, 3.2rem);
+}
+
+.admin-topbar p,
+.toolbar-status,
+.section-copy,
+.helper-text,
+.admin-field span {
+  color: var(--admin-ink-soft);
+}
+
+.toolbar-card {
+  position: sticky;
+  top: 1rem;
+}
+
+.toolbar-actions,
+.inline-actions,
+.row-actions,
+.image-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.toolbar-button,
+.small-button,
+.upload-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.8rem 1.1rem;
+  font-weight: 700;
+  transition: transform 0.18s ease, opacity 0.18s ease, background 0.18s ease;
+}
+
+.toolbar-button:hover,
+.small-button:hover,
+.upload-button:hover {
+  transform: translateY(-1px);
+}
+
+.toolbar-button {
+  background: rgba(197, 183, 161, 0.35);
+  color: var(--admin-ink);
+}
+
+.toolbar-button-primary,
+.small-button-primary,
+.upload-button {
+  background: var(--admin-accent);
+  color: #fff;
+}
+
+.small-button {
+  background: rgba(79, 96, 68, 0.14);
+  color: var(--admin-ink);
+  padding: 0.62rem 0.9rem;
+}
+
+.small-button-danger {
+  background: rgba(203, 106, 66, 0.12);
+  color: var(--admin-accent-dark);
+}
+
+.small-button-ghost {
+  background: rgba(197, 183, 161, 0.2);
+}
+
+.toolbar-button:disabled,
+.small-button:disabled,
+.upload-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+  transform: none;
+}
+
+.toolbar-status {
+  margin: 0.9rem 0 0;
+  min-height: 1.5rem;
+  font-weight: 600;
+}
+
+.toolbar-status[data-tone="success"] {
+  color: var(--admin-moss);
+}
+
+.toolbar-status[data-tone="error"] {
+  color: var(--admin-accent-dark);
+}
+
+[data-admin-app] {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.admin-section-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.admin-section-header h2 {
+  margin-bottom: 0.3rem;
+}
+
+.admin-section-header p {
+  margin: 0;
+}
+
+.editor-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.editor-card,
+.nested-card {
+  padding: 1rem;
+  background: var(--admin-panel-strong);
+}
+
+.nested-card {
+  background: rgba(246, 239, 230, 0.65);
+  border-radius: var(--admin-radius-sm);
+}
+
+.field-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.field-grid.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.field-grid.three-up {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.admin-field {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.admin-field span {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.admin-field input,
+.admin-field textarea {
+  width: 100%;
+  border: 1px solid rgba(197, 183, 161, 0.7);
+  border-radius: 12px;
+  padding: 0.85rem 0.95rem;
+  background: #fff;
+  color: var(--admin-ink);
+}
+
+.admin-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.subsection {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.subsection-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.subsection-header h3,
+.subsection-header h4 {
+  margin: 0;
+}
+
+.mini-row {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.preview-panel {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+  align-items: start;
+}
+
+.image-preview,
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 14px;
+  border: 1px solid rgba(197, 183, 161, 0.75);
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(203, 106, 66, 0.12), rgba(79, 96, 68, 0.18));
+}
+
+.image-preview {
+  object-fit: cover;
+}
+
+.image-placeholder {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  text-align: center;
+  color: var(--admin-ink-soft);
+  font-weight: 700;
+}
+
+.upload-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.upload-button input {
+  display: none;
+}
+
+.muted-note {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--admin-ink-soft);
+}
+
+.pill {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.36rem 0.68rem;
+  border-radius: 999px;
+  background: rgba(79, 96, 68, 0.12);
+  color: var(--admin-moss);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+  .admin-topbar,
+  .preview-panel,
+  .field-grid.two-up,
+  .field-grid.three-up {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar-card {
+    position: static;
+  }
+}

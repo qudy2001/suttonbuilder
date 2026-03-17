@@ -1,0 +1,7 @@
+.DS_Store
+.service/
+.env
+__pycache__/
+*.pyc
+assets/uploads/*
+!assets/uploads/.gitkeep

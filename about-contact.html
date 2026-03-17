@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About &amp; Contact | Sutton Builders</title>
+    <meta
+      name="description"
+      content="Learn how Sutton Builders works, the areas we serve, and send your project details for a callback or instant quote."
+    >
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/site.js"></script>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async></script>
+  </head>
+  <body data-root="./" data-page="about">
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">About Us / Contact Us</p>
+          <h1>Practical builders for homeowners who want straightforward advice</h1>
+          <p class="lead">
+            We support customers across Sutton, South London, and nearby Surrey areas with building work, renovations,
+            repairs, and a simple quote process that starts with a phone call or instant AI enquiry.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container content-grid">
+          <div>
+            <p class="eyebrow">Our Approach</p>
+            <h2>Reliable workmanship, clear communication, and the right trade support when needed</h2>
+            <p>
+              Homeowners often want one trusted point of contact rather than chasing multiple trades. Our service is
+              built around that. We take the time to understand the job, explain the likely route forward, and keep
+              the process organised whether the work is a full refurbishment, a kitchen refit, structural changes, or
+              a smaller repair.
+            </p>
+            <p>
+              For electrical and plumbing elements, we work with trusted partners so customers can access complete
+              solutions without the hassle of coordinating everything themselves.
+            </p>
+          </div>
+          <div class="details-card">
+            <p class="service-tag">Quick Contact</p>
+            <h3>Best ways to reach us</h3>
+            <ul class="contact-list">
+              <li>Call us directly on <a class="text-link no-wrap" href="tel:01206125455">01206&nbsp;125455</a>.</li>
+              <li>Use the instant quote assistant for out-of-hours enquiries.</li>
+              <li>Send project details, postcode, and your preferred callback time through the form below.</li>
+              <li>Ask for references relevant to the type of work you are planning.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <p class="eyebrow">How The Process Works</p>
+          <h2>A clear route from first enquiry to confirmed quote</h2>
+          <div class="process-grid">
+            <article class="process-step">
+              <strong>1</strong>
+              <h3>Initial enquiry</h3>
+              <p>Tell us what you need, where the property is, and whether the job is urgent or planned ahead.</p>
+            </article>
+            <article class="process-step">
+              <strong>2</strong>
+              <h3>Scope review</h3>
+              <p>We look at the details, ask a few practical questions, and decide if a site visit is needed.</p>
+            </article>
+            <article class="process-step">
+              <strong>3</strong>
+              <h3>Quote and advice</h3>
+              <p>You receive clear guidance on likely work involved and the next steps to move forward.</p>
+            </article>
+            <article class="process-step">
+              <strong>4</strong>
+              <h3>Scheduling</h3>
+              <p>Once approved, we agree timing, coordinate trades, and prepare for a clean start on site.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <p class="eyebrow">Request a Callback</p>
+            <h2>Send your project details</h2>
+            <p>
+              Use this form if you want us to review the job and call you back. It is set up in a static-site friendly
+              format so it can be connected to your preferred hosting form capture when deployed.
+            </p>
+            <form name="quote-request" method="POST" data-netlify="true" netlify-honeypot="company-name">
+              <input type="hidden" name="form-name" value="quote-request">
+              <input type="hidden" name="page" value="" data-current-page>
+              <p hidden>
+                <label>Do not fill this out if you are human: <input type="text" name="company-name"></label>
+              </p>
+              <div class="form-grid">
+                <label class="field">
+                  <span>Name</span>
+                  <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label class="field">
+                  <span>Phone</span>
+                  <input type="tel" name="phone" autocomplete="tel" required>
+                </label>
+                <label class="field">
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="email">
+                </label>
+                <label class="field">
+                  <span>Postcode</span>
+                  <input type="text" name="postcode" autocomplete="postal-code" required>
+                </label>
+                <label class="field">
+                  <span>Service Needed</span>
+                  <select name="service" required>
+                    <option value="">Choose a service</option>
+                    <option>General Building &amp; Renovation</option>
+                    <option>Home Extensions</option>
+                    <option>Loft &amp; Garage Conversions</option>
+                    <option>Kitchen Renovations</option>
+                    <option>Bathroom Renovations</option>
+                    <option>Structural Alterations</option>
+                    <option>Carpentry &amp; Joinery</option>
+                    <option>Outdoor &amp; Garden Works</option>
+                    <option>Electrical &amp; Plumbing</option>
+                    <option>Handyman &amp; Small Repairs</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Preferred Contact</span>
+                  <select name="contact-preference">
+                    <option>Phone call</option>
+                    <option>Email</option>
+                    <option>WhatsApp</option>
+                  </select>
+                </label>
+                <label class="field full-span">
+                  <span>Project Details</span>
+                  <textarea
+                    name="message"
+                    placeholder="Tell us what you need, the property type, rough dimensions, timing, and anything important to know."
+                    required
+                  ></textarea>
+                </label>
+              </div>
+              <div class="callout">
+                For faster triage, include the type of property, postcode, ideal start date, and any structural or
+                plumbing/electrical work involved.
+              </div>
+              <div class="button-row">
+                <button class="btn" type="submit">Send Project Details</button>
+                <a class="btn-ghost no-wrap" href="tel:01206125455">Call 01206125455</a>
+              </div>
+            </form>
+          </div>
+          <div class="contact-card" id="quote-panel">
+            <p class="eyebrow">Instant Quote</p>
+            <h2>Use the ElevenLabs assistant for an immediate first response</h2>
+            <p>
+              Great for evenings, weekends, and quick first contact. The assistant can collect the basics of the job so
+              we can follow up and confirm details with you directly.
+            </p>
+            <div class="quote-widget-shell">
+              <elevenlabs-convai agent-id="agent_4701kkxma3cmeeq98z1gsczmzs0n"></elevenlabs-convai>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>

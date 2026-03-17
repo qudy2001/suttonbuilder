@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sutton Builders Admin</title>
+    <link rel="stylesheet" href="/admin.css">
+    <script defer src="/admin.js"></script>
+  </head>
+  <body>
+    <div class="admin-shell">
+      <header class="admin-topbar">
+        <div class="admin-intro">
+          <p class="admin-eyebrow">Content Manager</p>
+          <h1>Sutton Builders Admin</h1>
+          <p>
+            Use this private panel on a separate port to update wording, upload images, and add projects without
+            touching the public site running on port 4173.
+          </p>
+        </div>
+        <div class="toolbar-card">
+          <div class="toolbar-actions">
+            <button class="toolbar-button" type="button" data-reload>Reload</button>
+            <button class="toolbar-button toolbar-button-primary" type="button" data-save>Save changes</button>
+          </div>
+          <p class="toolbar-status" data-status>Loading content...</p>
+        </div>
+      </header>
+
+      <main data-admin-app></main>
+    </div>
+  </body>
+</html>

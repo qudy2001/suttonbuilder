@@ -1,0 +1,548 @@
+{
+  "home": {
+    "hero": {
+      "eyebrow": "Trusted Builders in Sutton & South London",
+      "headingLines": [
+        "Extensions",
+        "Loft & Garage Conversions",
+        "Kitchen Upgrades",
+        "Structural Alterations",
+        "Home Gym",
+        "External Buildings"
+      ],
+      "lead": "Serving Sutton, Cheam, Croydon, Richmond, Crawley, Redhill and nearby areas with practical advice, tidy workmanship, and clear next steps from the first quote to final handover.",
+      "primaryCtaLabel": "Call 020 8016 8669",
+      "primaryCtaHref": "tel:02080168669",
+      "secondaryCtaLabel": "Get a Free Quote",
+      "secondaryCtaHref": "#quote-panel",
+      "panelTag": "Fast first response",
+      "panelTitle": "Built for homeowners who want clarity before work starts",
+      "panelDescription": "Use the instant quote assistant to describe your project, postcode, timing, and budget range. We will follow up to confirm the details and arrange the next step.",
+      "stats": [
+        {
+          "label": "Core coverage",
+          "value": "Greater London and South UK"
+        },
+        {
+          "label": "Main project types",
+          "value": "10+"
+        }
+      ]
+    },
+    "projectSlider": {
+      "interval": 5200,
+      "slides": [
+        {
+          "chipOne": "Rear Extension",
+          "chipTwo": "Sutton",
+          "title": "Bright kitchen-diner extension for everyday family living",
+          "description": "Perfect for showcasing the jump from a tighter ground floor to an open, light-filled space.",
+          "image": "",
+          "placeholderClass": "scene-extension-a"
+        },
+        {
+          "chipOne": "Kitchen Refit",
+          "chipTwo": "Cheam",
+          "title": "Clean-lined kitchen renovation with better storage and flow",
+          "description": "Great for showing worktops, fitted cabinetry, flooring, lighting, and the final finish.",
+          "image": "",
+          "placeholderClass": "scene-kitchen-a"
+        },
+        {
+          "chipOne": "Structural Work",
+          "chipTwo": "Croydon",
+          "title": "Knock-through and beam installation for open-plan living",
+          "description": "Useful for demonstrating how layout changes can transform the feeling of the whole home.",
+          "image": "",
+          "placeholderClass": "scene-structure-a"
+        },
+        {
+          "chipOne": "Loft Conversion",
+          "chipTwo": "Richmond",
+          "title": "Unused roof space turned into a bright bedroom and office zone",
+          "description": "Ideal for showing clients how hidden square footage can become practical living space.",
+          "image": "",
+          "placeholderClass": "scene-conversion-a"
+        },
+        {
+          "chipOne": "Outdoor Works",
+          "chipTwo": "Redhill",
+          "title": "Patio, fencing, and garden room upgrades that make outside space work harder",
+          "description": "A strong visual section for customers thinking about entertaining space or a home office.",
+          "image": "",
+          "placeholderClass": "scene-garden-a"
+        }
+      ]
+    },
+    "servicesCards": [
+      {
+        "interval": 3300,
+        "ariaLabel": "General building previews",
+        "tag": "Renovation",
+        "title": "General Building & Renovation",
+        "description": "Full refurbishments, layout changes, upgrades, and practical improvements for everyday living.",
+        "linkLabel": "Learn more",
+        "linkHref": "services/general-building-renovation.html",
+        "slides": [
+          {
+            "label": "Full refurbishments",
+            "image": "",
+            "placeholderClass": "scene-renovation-a"
+          },
+          {
+            "label": "Layout changes",
+            "image": "",
+            "placeholderClass": "scene-renovation-b"
+          }
+        ]
+      },
+      {
+        "interval": 3600,
+        "ariaLabel": "Home extension previews",
+        "tag": "Space",
+        "title": "Home Extensions",
+        "description": "Single and double-storey extensions designed to add useful space and long-term value.",
+        "linkLabel": "Learn more",
+        "linkHref": "services/home-extensions.html",
+        "slides": [
+          {
+            "label": "Single-storey",
+            "image": "",
+            "placeholderClass": "scene-extension-a"
+          },
+          {
+            "label": "Double-storey",
+            "image": "",
+            "placeholderClass": "scene-extension-b"
+          }
+        ]
+      },
+      {
+        "interval": 3900,
+        "ariaLabel": "Conversion previews",
+        "tag": "Conversion",
+        "title": "Loft & Garage Conversions",
+        "description": "Turn unused lofts and garages into offices, bedrooms, studios, or flexible family rooms.",
+        "linkLabel": "Learn more",
+        "linkHref": "services/loft-garage-conversions.html",
+        "slides": [
+          {
+            "label": "Loft rooms",
+            "image": "",
+            "placeholderClass": "scene-conversion-a"
+          },
+          {
+            "label": "Garage offices",
+            "image": "",
+            "placeholderClass": "scene-conversion-b"
+          }
+        ]
+      },
+      {
+        "interval": 4200,
+        "ariaLabel": "Kitchen and bathroom previews",
+        "tag": "Interiors",
+        "title": "Kitchen & Bathroom Renovations",
+        "description": "Refits, redesigns, storage updates, tiling, plumbing, and finishing details that lift the whole home.",
+        "linkLabel": "View kitchen services",
+        "linkHref": "services/kitchen-renovations.html",
+        "slides": [
+          {
+            "label": "Kitchen refits",
+            "image": "",
+            "placeholderClass": "scene-kitchen-a"
+          },
+          {
+            "label": "Bathroom upgrades",
+            "image": "",
+            "placeholderClass": "scene-bathroom-a"
+          }
+        ]
+      },
+      {
+        "interval": 4500,
+        "ariaLabel": "Structural alteration previews",
+        "tag": "Structure",
+        "title": "Structural Alterations",
+        "description": "Open-plan remodeling, beam installation, wall removal, and layout improvements with care.",
+        "linkLabel": "Learn more",
+        "linkHref": "services/structural-alterations.html",
+        "slides": [
+          {
+            "label": "Beam installs",
+            "image": "",
+            "placeholderClass": "scene-structure-a"
+          },
+          {
+            "label": "Wall removal",
+            "image": "",
+            "placeholderClass": "scene-structure-b"
+          }
+        ]
+      },
+      {
+        "interval": 4800,
+        "ariaLabel": "Carpentry previews",
+        "tag": "Woodwork",
+        "title": "Carpentry & Joinery",
+        "description": "Doors, frames, staircases, shelving, cabinetry, flooring, and bespoke fitted features.",
+        "linkLabel": "Learn more",
+        "linkHref": "services/carpentry-joinery.html",
+        "slides": [
+          {
+            "label": "Bespoke storage",
+            "image": "",
+            "placeholderClass": "scene-woodwork-a"
+          },
+          {
+            "label": "Doors and floors",
+            "image": "",
+            "placeholderClass": "scene-woodwork-b"
+          }
+        ]
+      },
+      {
+        "interval": 5100,
+        "ariaLabel": "Outdoor work previews",
+        "tag": "Outside",
+        "title": "Outdoor & Garden Works",
+        "description": "Patios, decking, fencing, garden rooms, groundwork, drainage, and exterior improvements.",
+        "linkLabel": "Learn more",
+        "linkHref": "services/outdoor-garden-works.html",
+        "slides": [
+          {
+            "label": "Patios and decking",
+            "image": "",
+            "placeholderClass": "scene-garden-a"
+          },
+          {
+            "label": "Garden rooms",
+            "image": "",
+            "placeholderClass": "scene-garden-b"
+          }
+        ]
+      },
+      {
+        "interval": 5400,
+        "ariaLabel": "Electrical and plumbing previews",
+        "tag": "Partner Trades",
+        "title": "Electrical & Plumbing",
+        "description": "Reliable electrics and plumbing through trusted partners for complete renovation support.",
+        "linkLabel": "Learn more",
+        "linkHref": "services/electrical-plumbing.html",
+        "slides": [
+          {
+            "label": "Lighting and sockets",
+            "image": "",
+            "placeholderClass": "scene-plumbing-a"
+          },
+          {
+            "label": "Kitchen plumbing",
+            "image": "",
+            "placeholderClass": "scene-plumbing-b"
+          }
+        ]
+      },
+      {
+        "interval": 5700,
+        "ariaLabel": "Handyman previews",
+        "tag": "Repairs",
+        "title": "Handyman & Small Repairs",
+        "description": "Quick fixes, maintenance work, replacements, and the smaller jobs that still need doing properly.",
+        "linkLabel": "Learn more",
+        "linkHref": "services/handyman-small-repairs.html",
+        "slides": [
+          {
+            "label": "Quick fixes",
+            "image": "",
+            "placeholderClass": "scene-repairs-a"
+          },
+          {
+            "label": "Home maintenance",
+            "image": "",
+            "placeholderClass": "scene-repairs-b"
+          }
+        ]
+      }
+    ]
+  },
+  "servicesPage": {
+    "hero": {
+      "eyebrow": "Services",
+      "title": "Our Building & Renovation Services",
+      "lead": "We offer a complete range of building, renovation, and property improvement services for residential clients. Whether you need a full refurbishment or small repairs, our experienced team delivers reliable results."
+    },
+    "servicesCards": [
+      {
+        "interval": 3300,
+        "ariaLabel": "General building previews",
+        "tag": "General",
+        "title": "General Building & Renovation",
+        "description": "Full refurbishments, upgrades, and structural improvements.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Full refurbishments",
+            "image": "",
+            "placeholderClass": "scene-renovation-a"
+          },
+          {
+            "label": "Structural upgrades",
+            "image": "",
+            "placeholderClass": "scene-renovation-b"
+          }
+        ]
+      },
+      {
+        "interval": 3600,
+        "ariaLabel": "Home extension previews",
+        "tag": "Extension",
+        "title": "Home Extensions",
+        "description": "Single and double-storey extensions to add space and value.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Rear extensions",
+            "image": "",
+            "placeholderClass": "scene-extension-a"
+          },
+          {
+            "label": "Double-storey",
+            "image": "",
+            "placeholderClass": "scene-extension-b"
+          }
+        ]
+      },
+      {
+        "interval": 3900,
+        "ariaLabel": "Conversion previews",
+        "tag": "Conversion",
+        "title": "Loft & Garage Conversions",
+        "description": "Convert unused space into functional living areas.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Loft bedrooms",
+            "image": "",
+            "placeholderClass": "scene-conversion-a"
+          },
+          {
+            "label": "Garage offices",
+            "image": "",
+            "placeholderClass": "scene-conversion-b"
+          }
+        ]
+      },
+      {
+        "interval": 4200,
+        "ariaLabel": "Kitchen renovation previews",
+        "tag": "Kitchen",
+        "title": "Kitchen Renovations",
+        "description": "Complete kitchen refits, extensions, and layout redesigns.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Kitchen refits",
+            "image": "",
+            "placeholderClass": "scene-kitchen-a"
+          },
+          {
+            "label": "Layout redesigns",
+            "image": "",
+            "placeholderClass": "scene-kitchen-b"
+          }
+        ]
+      },
+      {
+        "interval": 4500,
+        "ariaLabel": "Bathroom renovation previews",
+        "tag": "Bathroom",
+        "title": "Bathroom Renovations",
+        "description": "Modern bathroom installations and upgrades.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Bathroom upgrades",
+            "image": "",
+            "placeholderClass": "scene-bathroom-a"
+          },
+          {
+            "label": "Modern fittings",
+            "image": "",
+            "placeholderClass": "scene-bathroom-b"
+          }
+        ]
+      },
+      {
+        "interval": 4800,
+        "ariaLabel": "Structural work previews",
+        "tag": "Structure",
+        "title": "Structural Alterations",
+        "description": "Beam installation, wall removal, and layout changes.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Beam installation",
+            "image": "",
+            "placeholderClass": "scene-structure-a"
+          },
+          {
+            "label": "Open-plan layouts",
+            "image": "",
+            "placeholderClass": "scene-structure-b"
+          }
+        ]
+      },
+      {
+        "interval": 5100,
+        "ariaLabel": "Joinery previews",
+        "tag": "Joinery",
+        "title": "Carpentry & Joinery",
+        "description": "Custom woodwork, doors, stairs, and bespoke furniture.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Custom storage",
+            "image": "",
+            "placeholderClass": "scene-woodwork-a"
+          },
+          {
+            "label": "Doors and stairs",
+            "image": "",
+            "placeholderClass": "scene-woodwork-b"
+          }
+        ]
+      },
+      {
+        "interval": 5400,
+        "ariaLabel": "Outdoor work previews",
+        "tag": "Outdoor",
+        "title": "Outdoor & Garden Works",
+        "description": "Patios, decking, garden rooms, fencing, and groundwork.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Patios and decking",
+            "image": "",
+            "placeholderClass": "scene-garden-a"
+          },
+          {
+            "label": "Garden rooms",
+            "image": "",
+            "placeholderClass": "scene-garden-b"
+          }
+        ]
+      },
+      {
+        "interval": 5700,
+        "ariaLabel": "Electrical and plumbing previews",
+        "tag": "Partner Trades",
+        "title": "Electrical & Plumbing",
+        "description": "Reliable electrics and plumbing through trusted partners.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Sockets and lights",
+            "image": "",
+            "placeholderClass": "scene-plumbing-a"
+          },
+          {
+            "label": "Bathroom plumbing",
+            "image": "",
+            "placeholderClass": "scene-plumbing-b"
+          }
+        ]
+      },
+      {
+        "interval": 6000,
+        "ariaLabel": "Handyman previews",
+        "tag": "Repairs",
+        "title": "Handyman & Small Repairs",
+        "description": "Quick fixes, maintenance, and minor improvements.",
+        "linkLabel": "",
+        "linkHref": "",
+        "slides": [
+          {
+            "label": "Quick fixes",
+            "image": "",
+            "placeholderClass": "scene-repairs-a"
+          },
+          {
+            "label": "Small repairs",
+            "image": "",
+            "placeholderClass": "scene-repairs-b"
+          }
+        ]
+      }
+    ]
+  },
+  "galleryPage": {
+    "hero": {
+      "eyebrow": "Gallery / Projects",
+      "title": "Showcase of our work",
+      "lead": ""
+    },
+    "projects": [
+      {
+        "tag": "Extension",
+        "title": "Rear Extension & Open-Plan Living",
+        "description": "Ideal for showing before-and-after transformation of extra family space and a new kitchen layout.",
+        "image": "",
+        "placeholderClass": "photo-extension"
+      },
+      {
+        "tag": "Kitchen",
+        "title": "Kitchen Refit & Layout Upgrade",
+        "description": "Use this slot for cabinetry, flooring, lighting, and the finished cooking and dining space.",
+        "image": "",
+        "placeholderClass": "photo-kitchen"
+      },
+      {
+        "tag": "Bathroom",
+        "title": "Bathroom Renovation",
+        "description": "Perfect for tiled feature walls, shower upgrades, vanity units, and practical storage details.",
+        "image": "",
+        "placeholderClass": "photo-bathroom"
+      },
+      {
+        "tag": "Conversion",
+        "title": "Loft Bedroom or Office Conversion",
+        "description": "Highlight how unused loft space became a functional room with better light and storage.",
+        "image": "",
+        "placeholderClass": "photo-loft"
+      },
+      {
+        "tag": "Outdoor",
+        "title": "Garden Room, Patio or Decking Project",
+        "description": "Show landscaping improvements, garden offices, fencing, and clean, usable outside areas.",
+        "image": "",
+        "placeholderClass": "photo-garden"
+      },
+      {
+        "tag": "Structure",
+        "title": "Structural Knock-Through & Beam Work",
+        "description": "Useful for demonstrating open-plan remodeling and the stages of careful structural change.",
+        "image": "",
+        "placeholderClass": "photo-structure"
+      }
+    ],
+    "cta": {
+      "eyebrow": "Portfolio Tip",
+      "title": "Add real project photos here as you complete more work",
+      "description": "The cards are already laid out for quick updates. Swap in your own before-and-after images, short captions, and the area or type of project to make this page even stronger for future customers.",
+      "primaryCtaLabel": "Ask About a Similar Project",
+      "primaryCtaHref": "about-contact.html",
+      "secondaryCtaLabel": "See All Services",
+      "secondaryCtaHref": "services.html"
+    }
+  }
+}
